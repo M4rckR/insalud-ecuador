@@ -24,9 +24,9 @@ export default function VphJesusMaria() {
       />
       <TestimonialBubbles
         messages={[
-          "Puede aparecer desde los 30s y empeorar con el tiempo si no se trata.",
-          "No siempre es por estrés o edad. Muchas veces es un problema vascular.",
-          "Las pastillas son temporales. Este tratamiento reactiva el flujo real.",
+          "“1 de cada 2 personas sexualmente activas tendrá VPH en algún momento.”",
+          "“Muchas veces es silencioso y se manifiesta como verrugas.”",
+          "“Si no se trata, puede derivar en cáncer de cuello uterino, pene o ano.”",
         ]}
       />
       <section id="beneficios">

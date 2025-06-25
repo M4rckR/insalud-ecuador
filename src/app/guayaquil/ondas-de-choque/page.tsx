@@ -20,9 +20,9 @@ export default function OndasGuayaquilPage() {
         <TestimonialBubbles
           titleWithColors="La {cyan}disfunción eréctil{/cyan} no solo afecta tu cuerpo. Afecta cómo te {cyan}ves a ti mismo{/cyan}"
           messages={[
-            "Puede aparecer desde los 30s y empeorar con el tiempo si no se trata.",
-            "No siempre es por estrés o edad. Muchas veces es un problema vascular.",
-            "Las pastillas son temporales. Este tratamiento reactiva el flujo real.",
+            "“Puede aparecer desde los 30s y empeorar con el tiempo si no se trata.”",
+            "“No siempre es por estrés o edad. Muchas veces es un problema vascular.”",
+            "“Las pastillas son solo un parche. Este tratamiento reactiva el flujo sanguíneo real.”",
           ]}
         />
       </section>
