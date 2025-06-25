@@ -4,7 +4,7 @@ import { useState } from "react";
 import { MessageCircle, X } from "lucide-react";
 
 type FloatingWhatsAppProps = {
-  phoneNumber: string; // Número sin el +, ej: "51987654321"
+  phoneNumber: string; // Número sin el +, ej: "593987654321"
   message: string; // Mensaje predefinido
   tooltipText?: string; // Solo esta personalización es útil
 };

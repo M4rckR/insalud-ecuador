@@ -6,10 +6,10 @@ import { AppointmentCta } from "../../components/AppointmentCta";
 import { HeroContact } from "../../components/hero-1/HeroContact";
 import { FloatingWhatsApp } from "@/components/ui/FloatingWhatsApp";
 import { questionVph } from "@/data/questions/questionVph";
-import { golfData } from "@/data/sedes/golf";
+import { guayaquilData } from "@/data/sedes/guayaquil";
 import { Footer } from "@/app/components/Footer";
 
-export default function VphGolf() {
+export default function VphGuayaquil() {
   return (
     <>
       <HeroContact 
@@ -79,20 +79,20 @@ export default function VphGolf() {
         title="Recupera tu confianza con un tratamiento clínico eficaz y personalizado"
         description="Nuestro equipo de especialistas está listo para ayudarte a dar el primer paso hacia tu bienestar."
         titleMobile="Recupera tu confianza con un tratamiento clínico eficaz y personalizado"
-        whatsappNumber={golfData.landings.vph.whatsapp}
-        whatsappMessage={golfData.landings.vph.message}
+        whatsappNumber={guayaquilData.landings.vph.whatsapp}
+        whatsappMessage={guayaquilData.landings.vph.message}
       />
       <Questions questions={questionVph} />
       <FloatingWhatsApp
-        phoneNumber={golfData.landings.vph.whatsapp}
-        message={golfData.landings.vph.message}
+        phoneNumber={guayaquilData.landings.vph.whatsapp}
+        message={guayaquilData.landings.vph.message}
         tooltipText="¡Conversemos por WhatsApp!"
       />
       <Footer
-          address={golfData.address}
-          phone={golfData.landings.vph.whatsapp}
-          email={golfData.email}
-          socials={golfData.socials}
+          address={guayaquilData.address}
+          phone={guayaquilData.landings.vph.whatsapp}
+          email={guayaquilData.email}
+          socials={guayaquilData.socials}
         />
     </>
   );

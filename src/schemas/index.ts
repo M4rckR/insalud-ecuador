@@ -5,9 +5,9 @@ export const formLeadsSchema = z.object({
     telefono: z.string()
         .min(1, { message: "El teléfono es requerido" })
         .regex(/^\d+$/, { message: "Solo se permiten números" })
-        .min(9, { message: "Debe tener 9 dígitos" })
-        .max(9, { message: "Debe tener 9 dígitos" })
-        .regex(/^9\d{8}$/, { message: "Debe iniciar con 9 (celular peruano)" }),
+        .min(10, { message: "Debe tener 10 dígitos" })
+        .max(10, { message: "Debe tener 10 dígitos" })
+        .regex(/^09\d{8}$/, { message: "Debe iniciar con 09 (celular ecuatoriano)" }),
     turno: z.string().min(1, { message: "El turno es requerido" }),
     // Campos opcionales para el gestor
     gestorEmail: z.string().optional(),

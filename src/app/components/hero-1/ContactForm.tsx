@@ -74,7 +74,7 @@ export const ContactForm = ({ gestorData, tratamiento, sede }: ContactFormProps)
       const data = await response.json();
 
       if (response.ok) {
-        toast.success(`Tus datos fueron enviados correctamente. Nos contactaremos contigo pronto 😊`);
+        toast.success(`Gracias por dejarnos tus datos. Nos contactaremos contigo pronto 😊`);
         form.reset();
       } else {
         toast.error(data.mensaje || "Error al enviar el formulario");
@@ -121,7 +121,7 @@ export const ContactForm = ({ gestorData, tratamiento, sede }: ContactFormProps)
                       className="bg-in-cyan md:bg-white font-normal md:font-medium text-in-blue placeholder:text-in-blue placeholder:font-normal placeholder:text-sm md:placeholder:font-medium py-5 focus:border-in-orange"
                       {...field}
                       placeholder="Celular*"
-                      maxLength={9}
+                      maxLength={10}
                         onChange={(e) => {
                           const value = e.target.value.replace(/\D/g, '');
                           field.onChange(value);

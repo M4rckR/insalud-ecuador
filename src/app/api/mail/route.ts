@@ -48,7 +48,7 @@ export async function POST(req: NextRequest) {
                                 </tr>
                                 <tr style="border-bottom: 1px solid #e2e8f0;">
                                     <td style="padding: 8px 0; font-weight: bold; color: #374151;">Teléfono:</td>
-                                    <td style="padding: 8px 0; color: #6b7280;"><a href="tel:+51${telefono}" style="color: #2563eb; text-decoration: none;">+51 ${telefono}</a></td>
+                                    <td style="padding: 8px 0; color: #6b7280;"><a href="tel:+593${telefono}" style="color: #2563eb; text-decoration: none;">+593 ${telefono}</a></td>
                                 </tr>
                                 <tr style="border-bottom: 1px solid #e2e8f0;">
                                     <td style="padding: 8px 0; font-weight: bold; color: #374151;">Turno preferido:</td>

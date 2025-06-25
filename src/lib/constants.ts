@@ -20,13 +20,12 @@ export const TRATAMIENTOS = {
 } as const;
 
 export const SEDES = {
-  JESUS_MARIA: 'Jesús María',
-  SUR: 'Sur',
-  GOLF: 'Golf'
+  QUITO: 'Quito',
+  GUAYAQUIL: 'Guayaquil'
 } as const;
 
 export const FORM_VALIDATION_MESSAGES = {
   REQUIRED: 'Este campo es requerido',
-  INVALID_PHONE: 'Número de teléfono inválido',
+  INVALID_PHONE: 'Número de teléfono ecuatoriano inválido (debe iniciar con 09)',
   MIN_NAMES: 'El nombre debe tener al menos 2 caracteres'
 } as const; 

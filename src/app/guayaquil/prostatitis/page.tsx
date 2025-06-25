@@ -6,10 +6,10 @@ import { AppointmentCta } from "../../components/AppointmentCta";
 import { HeroContact } from "../../components/hero-1/HeroContact";
 import { FloatingWhatsApp } from "@/components/ui/FloatingWhatsApp";
 import { questionProstatitis } from "@/data/questions/questionProstatitis";
-import { jesusMariaData } from "@/data/sedes/jesus-maria";
+import { guayaquilData } from "@/data/sedes/guayaquil";
 import { Footer } from "@/app/components/Footer";
 
-export default function ProstatitisJesusMaria() {
+export default function ProstatitisGuayaquil() {
   return (
     <>
       <HeroContact  
@@ -74,20 +74,20 @@ export default function ProstatitisJesusMaria() {
         title="Recupera tu calidad de vida con nuestro tratamiento avanzado con Ondas de Choque"
         description="Nuestro equipo de especialistas está listo para ayudarte a dar el primer paso hacia tu bienestar."
         titleMobile="Recupera tu calidad de vida con nuestro tratamiento avanzado con Ondas de Choque "
-        whatsappNumber={jesusMariaData.landings.prostatitis.whatsapp}
-        whatsappMessage={jesusMariaData.landings.prostatitis.message}
+        whatsappNumber={guayaquilData.landings.prostatitis.whatsapp}
+        whatsappMessage={guayaquilData.landings.prostatitis.message}
       />
       <Questions questions={questionProstatitis} />
       <FloatingWhatsApp
-        phoneNumber={jesusMariaData.landings.prostatitis.whatsapp}
-        message={jesusMariaData.landings.prostatitis.message}
+        phoneNumber={guayaquilData.landings.prostatitis.whatsapp}
+        message={guayaquilData.landings.prostatitis.message}
         tooltipText="¡Conversemos por WhatsApp!"
       />
-                    <Footer
-          address={jesusMariaData.address}
-          phone={jesusMariaData.landings.prostatitis.whatsapp}
-          email={jesusMariaData.email}
-          socials={jesusMariaData.socials}
+            <Footer
+          address={guayaquilData.address}
+          phone={guayaquilData.landings.prostatitis.whatsapp}
+          email={guayaquilData.email}
+          socials={guayaquilData.socials}
         />
     </>
   );

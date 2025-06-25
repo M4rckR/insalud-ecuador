@@ -7,9 +7,9 @@ import { TestimonialBubbles } from "@/app/components/TestimonialBubbles";
 import { Treatment } from "@/app/components/Treatment/Treatment";
 import { FloatingWhatsApp } from "@/components/ui/FloatingWhatsApp";
 import { questionDisfuncion } from "@/data/questions/questionDisfuncion";
-import { golfData } from "@/data/sedes/golf";
+import { guayaquilData } from "@/data/sedes/guayaquil";
 
-export default function OndasGolfPage() {
+export default function OndasGuayaquilPage() {
   return (
     <>
       {/* Hero Section */}
@@ -83,8 +83,8 @@ export default function OndasGolfPage() {
                 title="Recupera tu confianza con Ondas de Choque de Alta Frecuencia, un tratamiento no invasivo y clínicamente probado para mejorar la erección de forma natural y duradera."
                 description="Nuestro equipo de especialistas está listo para ayudarte a dar el primer paso hacia tu bienestar."
                 titleMobile="Recupera tu confianza con un tratamiento clínico eficaz y personalizado"
-                whatsappNumber={golfData.landings.ondasChoque.whatsapp}
-                whatsappMessage={golfData.landings.ondasChoque.message}
+                whatsappNumber={guayaquilData.landings.ondasChoque.whatsapp}
+                whatsappMessage={guayaquilData.landings.ondasChoque.message}
             />
 
       {/* Preguntas Section */}
@@ -94,16 +94,16 @@ export default function OndasGolfPage() {
 
       {/* WhatsApp Flotante */}
       <FloatingWhatsApp
-        phoneNumber={golfData.landings.ondasChoque.whatsapp}
-        message={golfData.landings.ondasChoque.message}
+        phoneNumber={guayaquilData.landings.ondasChoque.whatsapp}
+        message={guayaquilData.landings.ondasChoque.message}
         tooltipText="¿Dudas sobre disfunción eréctil?"
       />
 
       <Footer
-          address={golfData.address}
-          phone={golfData.landings.ondasChoque.whatsapp}
-          email={golfData.email}
-          socials={golfData.socials}
+          address={guayaquilData.address}
+          phone={guayaquilData.landings.ondasChoque.whatsapp}
+          email={guayaquilData.email}
+          socials={guayaquilData.socials}
         />
     </>
   );

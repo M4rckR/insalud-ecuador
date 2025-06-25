@@ -28,27 +28,27 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "Insalud Peru",
+  title: "Insalud Ecuador",
   description: "Red de centros de salud especializados en brindar soluciones integrales en el ámbito de la salud sexual.",
   keywords: "centro médico quito, hospital quito, servicios médicos ecuador, especialistas médicos, atención médica especializada, urologia, vph, verruga, vih, ondas de choque",
-  authors: [{ name: "Insalud Peru" }],
-  creator: "Insalud Peru",
-  publisher: "Insalud Peru",
+  authors: [{ name: "Insalud Ecuador" }],
+  creator: "Insalud Ecuador",
+  publisher: "Insalud Ecuador",
   robots: "index, follow",
   openGraph: {
-    title: "Insalud Peru",
+    title: "Insalud Ecuador",
     description: "Red de centros de salud especializados en brindar soluciones integrales en el ámbito de la salud sexual.",
     type: "website",
     locale: "es_EC",
-    siteName: "Insalud Peru",
+    siteName: "Insalud Ecuador",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Insalud Peru",
+    title: "Insalud Ecuador",
     description: "Red de centros de salud especializados en brindar soluciones integrales en el ámbito de la salud sexual.",
   },
   alternates: {
-    canonical: "https://insalud.pe",
+    canonical: "https://insalud.ec",
   },
 };
 

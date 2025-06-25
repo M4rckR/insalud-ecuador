@@ -6,7 +6,7 @@ import { AppointmentCta } from "../../components/AppointmentCta";
 import { HeroContact } from "../../components/hero-1/HeroContact";
 import { FloatingWhatsApp } from "@/components/ui/FloatingWhatsApp";
 import { questionVph } from "@/data/questions/questionVph";
-import { jesusMariaData } from "@/data/sedes/jesus-maria";
+import { quitoData } from "@/data/sedes/quito";
 import { Footer } from "@/app/components/Footer";
 
 export default function VphJesusMaria() {
@@ -18,7 +18,7 @@ export default function VphJesusMaria() {
         title="¿Tienes verrugas genitales? "
         subtitle="Podrías tener VPH y no saberlo"
         description="Agenda tu cita ahora y elimina las verrugas sin dañar tu piel."
-        gestorData={jesusMariaData.landings.vph}
+        gestorData={quitoData.landings.vph}
         tratamiento="VPH"
         sede="Jesús María"
       />
@@ -82,20 +82,20 @@ export default function VphJesusMaria() {
         title="Recupera tu confianza con un tratamiento clínico eficaz y personalizado"
         description="Nuestro equipo de especialistas está listo para ayudarte a dar el primer paso hacia tu bienestar."
         titleMobile="Recupera tu confianza con un tratamiento clínico eficaz y personalizado"
-        whatsappNumber={jesusMariaData.landings.vph.whatsapp}
-        whatsappMessage={jesusMariaData.landings.vph.message}
+        whatsappNumber={quitoData.landings.vph.whatsapp}
+        whatsappMessage={quitoData.landings.vph.message}
       />
       <Questions questions={questionVph} />
       <FloatingWhatsApp
-        phoneNumber={jesusMariaData.landings.vph.whatsapp}
-        message={jesusMariaData.landings.vph.message}
+        phoneNumber={quitoData.landings.vph.whatsapp}
+        message={quitoData.landings.vph.message}
         tooltipText="¡Conversemos por WhatsApp!"
       />
               <Footer
-          address={jesusMariaData.address}
-          phone={jesusMariaData.landings.vph.whatsapp}
-          email={jesusMariaData.email}
-          socials={jesusMariaData.socials}
+          address={quitoData.address}
+          phone={quitoData.landings.vph.whatsapp}
+          email={quitoData.email}
+          socials={quitoData.socials}
         />
     </>
   );

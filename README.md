@@ -1,10 +1,10 @@
 # 🏥 Insalud - Plataforma de Landing Pages Médicas
 
-Una plataforma web moderna desarrollada con **Next.js 15** para **Insalud**, red de centros médicos especializados en salud sexual en Perú. El proyecto implementa un sistema de landing pages dinámicas para diferentes sedes y tratamientos médicos especializados.
+Una plataforma web moderna desarrollada con **Next.js 15** para **Insalud**, red de centros médicos especializados en salud sexual en Ecuador. El proyecto implementa un sistema de landing pages dinámicas para diferentes sedes y tratamientos médicos especializados.
 
 ## 🌟 Características Principales
 
-- **🏢 Multi-sede**: Soporte para múltiples ubicaciones (Jesús María, Sur, Golf)
+- **🏢 Multi-sede**: Soporte para múltiples ubicaciones (Quito, Guayaquil)
 - **💉 Multi-tratamiento**: Páginas especializadas para VPH, Ondas de Choque, Prostatitis
 - **📱 Responsive**: Diseño completamente adaptativo para móviles y desktop
 - **⚡ Performance**: Optimizado con Next.js 15 y Turbopack
@@ -73,9 +73,8 @@ insalud-ecuador/
 │   │   │   └── 📂 Treatment/
 │   │   │
 │   │   └── 📂 [sedes]/           # Rutas dinámicas por sede
-│   │       ├── 📂 jesus-maria/   # Sede Jesús María
-│   │       ├── 📂 sur/           # Sede Sur
-│   │       └── 📂 golf/          # Sede Golf
+│   │       ├── 📂 quito/         # Sede Quito
+│   │       └── 📂 guayaquil/     # Sede Guayaquil
 │   │           ├── 📄 layout.tsx # Layout por sede
 │   │           ├── 📂 vph/       # Tratamiento VPH
 │   │           ├── 📂 ondas-de-choque/  # Ondas de Choque
@@ -99,9 +98,8 @@ insalud-ecuador/
 │   │   │   ├── 📄 questionProstatitis.ts
 │   │   │   └── 📄 questionVph.ts
 │   │   └── 📂 sedes/            # Configuración de sedes
-│   │       ├── 📄 golf.ts
-│   │       ├── 📄 jesus-maria.ts
-│   │       └── 📄 sur.ts
+│   │       ├── 📄 quito.ts
+│   │       └── 📄 guayaquil.ts
 │   │
 │   ├── 📂 hooks/                 # Custom hooks
 │   │   └── 📄 useContactForm.ts  # Hook para formularios de contacto
@@ -156,12 +154,12 @@ Crea un archivo `.env.local` en la raíz del proyecto:
 # SMTP Configuration para Nodemailer
 SMTP_HOST=smtp.gmail.com
 SMTP_PORT=465
-SMTP_USER=tu-email@insalud.pe
+SMTP_USER=tu-email@insalud.ec
 SMTP_PASS=tu-app-password
 
 # Next.js Configuration
-NEXT_PUBLIC_CDN_URL=https://cdn.insalud.pe
-NEXT_PUBLIC_SITE_URL=https://insalud.pe
+NEXT_PUBLIC_CDN_URL=https://cdn.insalud.ec
+NEXT_PUBLIC_SITE_URL=https://insalud.ec
 
 # Analytics (opcional)
 NEXT_PUBLIC_GA_TRACKING_ID=G-XXXXXXXXXX
@@ -216,14 +214,14 @@ graph TD
 Cada sede tiene su propia configuración en `/src/data/sedes/`:
 
 ```typescript
-// Ejemplo: jesus-maria.ts
-export const jesusMariaData = {
-  name: "Jesús María",
-  city: "Jesús María", 
-  country: "Perú",
-  address: "Av. Faustino Sánchez Carrión 615",
-  phone: "+51 969 447 773",
-  email: "contacto.citas@insalud.pe",
+// Ejemplo: quito.ts
+export const quitoData = {
+  name: "Quito",
+  city: "Quito", 
+  country: "Ecuador",
+  address: "Av. 10 de Agosto N24-253",
+  phone: "+593 98 765 4321",
+  email: "contacto.citas@insalud.ec",
   landings: {
     vph: {
       gestor: "Misael",
@@ -245,9 +243,9 @@ Sistema robusto con Zod y React Hook Form:
 export const formLeadsSchema = z.object({
   nombres: z.string().min(1, { message: "El nombre es requerido" }),
   telefono: z.string()
-    .min(9, { message: "Debe tener 9 dígitos" })
-    .max(9, { message: "Debe tener 9 dígitos" })
-    .regex(/^9\d{8}$/, { message: "Debe iniciar con 9 (celular peruano)" }),
+    .min(10, { message: "Debe tener 10 dígitos" })
+    .max(10, { message: "Debe tener 10 dígitos" })
+    .regex(/^09\d{8}$/, { message: "Debe iniciar con 09 (celular ecuatoriano)" }),
   turno: z.string().min(1, { message: "El turno es requerido" }),
 })
 ```
@@ -326,11 +324,11 @@ Los emails incluyen:
 
 ```typescript
 export const metadata: Metadata = {
-  title: "Insalud Peru",
+  title: "Insalud Ecuador",
   description: "Red de centros de salud especializados...",
   keywords: "centro médico quito, hospital quito, servicios médicos ecuador...",
   openGraph: {
-    title: "Insalud Peru",
+    title: "Insalud Ecuador",
     description: "Red de centros de salud especializados...",
     type: "website",
     locale: "es_EC",
@@ -488,6 +486,7 @@ git push origin feature/nueva-sede-huancayo
 2. Añadir carpeta en `/src/app/nueva-sede/`
 3. Crear layouts y páginas de tratamientos
 4. Actualizar tipos en `/src/types/index.ts`
+5. Actualizar constantes en `/src/lib/constants.ts`
 
 ### Añadir Nuevo Tratamiento
 
@@ -498,19 +497,19 @@ git push origin feature/nueva-sede-huancayo
 
 ## 📞 Soporte y Contacto
 
-- **Email Técnico**: desarrollo@insalud.pe
-- **Email Comercial**: contacto.citas@insalud.pe
-- **WhatsApp**: +51 969 447 773
+- **Email Técnico**: desarrollo@insalud.ec
+- **Email Comercial**: contacto.citas@insalud.ec
+- **WhatsApp**: +593 98 765 4321
 
 ## 📄 Licencia
 
-Este proyecto es propiedad de **Insalud Peru** y está protegido por derechos de autor. Todos los derechos reservados.
+Este proyecto es propiedad de **Insalud Ecuador** y está protegido por derechos de autor. Todos los derechos reservados.
 
 ## 🔄 Changelog
 
 ### v0.1.0 (Actual)
 - ✅ Implementación inicial con Next.js 15
-- ✅ Sistema multi-sede (Jesús María, Sur, Golf)
+- ✅ Sistema multi-sede (Quito, Guayaquil)
 - ✅ Tratamientos: VPH, Ondas de Choque, Prostatitis
 - ✅ Sistema de formularios con validación
 - ✅ Integración completa de email
@@ -527,6 +526,6 @@ Este proyecto es propiedad de **Insalud Peru** y está protegido por derechos de
 
 ---
 
-**Desarrollado con ❤️ para Insalud Peru**
+**Desarrollado con ❤️ para Insalud Ecuador**
 
-*Transformando la atención médica especializada en Perú mediante tecnología de vanguardia.*
+*Transformando la atención médica especializada en Ecuador mediante tecnología de vanguardia.*

@@ -6,10 +6,10 @@ import { Questions } from "../../components/Questions";
 import { HeroContact } from "../../components/hero-2/HeroContact";
 import { FloatingWhatsApp } from "@/components/ui/FloatingWhatsApp";
 import { questionDisfuncion } from "@/data/questions/questionDisfuncion";
-import { jesusMariaData } from "@/data/sedes/jesus-maria";
+import { quitoData } from "@/data/sedes/quito";
 import { Footer } from "@/app/components/Footer";
 
-export default function DisfuncionJesusMaria() {
+export default function DisfuncionQuito() {
     return (
         <>
             {/* Hero Section */}
@@ -76,8 +76,8 @@ export default function DisfuncionJesusMaria() {
                 title="Recupera tu confianza con Ondas de Choque de Alta Frecuencia, un tratamiento no invasivo y clínicamente probado para mejorar la erección de forma natural y duradera."
                 description="Nuestro equipo de especialistas está listo para ayudarte a dar el primer paso hacia tu bienestar."
                 titleMobile="Recupera tu confianza con un tratamiento clínico eficaz y personalizado"
-                whatsappNumber={jesusMariaData.landings.ondasChoque.whatsapp}
-                whatsappMessage={jesusMariaData.landings.ondasChoque.message}
+                whatsappNumber={quitoData.landings.ondasChoque.whatsapp}
+                whatsappMessage={quitoData.landings.ondasChoque.message}
             />
             
             {/* Preguntas Section */}
@@ -87,15 +87,15 @@ export default function DisfuncionJesusMaria() {
             
             {/* WhatsApp Flotante */}
             <FloatingWhatsApp 
-                phoneNumber={jesusMariaData.landings.ondasChoque.whatsapp}
-                message={jesusMariaData.landings.ondasChoque.message}
+                phoneNumber={quitoData.landings.ondasChoque.whatsapp}
+                message={quitoData.landings.ondasChoque.message}
                 tooltipText="¿Dudas sobre disfunción eréctil?"
             />
                           <Footer
-          address={jesusMariaData.address}
-          phone={jesusMariaData.landings.ondasChoque.whatsapp}
-          email={jesusMariaData.email}
-          socials={jesusMariaData.socials}
+          address={quitoData.address}
+          phone={quitoData.landings.ondasChoque.whatsapp}
+          email={quitoData.email}
+          socials={quitoData.socials}
         />
         </>
     )

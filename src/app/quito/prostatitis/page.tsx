@@ -6,10 +6,10 @@ import { AppointmentCta } from "../../components/AppointmentCta";
 import { HeroContact } from "../../components/hero-1/HeroContact";
 import { FloatingWhatsApp } from "@/components/ui/FloatingWhatsApp";
 import { questionProstatitis } from "@/data/questions/questionProstatitis";
-import { golfData } from "@/data/sedes/golf";
+import { quitoData } from "@/data/sedes/quito";    
 import { Footer } from "@/app/components/Footer";
 
-export default function ProstatitisGolf() {
+export default function ProstatitisQuito() {
   return (
     <>
       <HeroContact  
@@ -74,20 +74,20 @@ export default function ProstatitisGolf() {
         title="Recupera tu calidad de vida con nuestro tratamiento avanzado con Ondas de Choque"
         description="Nuestro equipo de especialistas está listo para ayudarte a dar el primer paso hacia tu bienestar."
         titleMobile="Recupera tu calidad de vida con nuestro tratamiento avanzado con Ondas de Choque "
-        whatsappNumber={golfData.landings.prostatitis.whatsapp}
-        whatsappMessage={golfData.landings.prostatitis.message}
+        whatsappNumber={quitoData.landings.prostatitis.whatsapp}
+        whatsappMessage={quitoData.landings.prostatitis.message}
       />
       <Questions questions={questionProstatitis} />
       <FloatingWhatsApp
-        phoneNumber={golfData.landings.prostatitis.whatsapp}
-        message={golfData.landings.prostatitis.message}
+        phoneNumber={quitoData.landings.prostatitis.whatsapp}
+        message={quitoData.landings.prostatitis.message}
         tooltipText="¡Conversemos por WhatsApp!"
       />
-            <Footer
-          address={golfData.address}
-          phone={golfData.landings.prostatitis.whatsapp}
-          email={golfData.email}
-          socials={golfData.socials}
+                    <Footer
+          address={quitoData.address}
+          phone={quitoData.landings.prostatitis.whatsapp}
+          email={quitoData.email}
+          socials={quitoData.socials}
         />
     </>
   );
