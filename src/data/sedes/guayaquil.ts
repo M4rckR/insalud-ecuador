@@ -3,7 +3,7 @@ export const guayaquilData = {
   city: "Guayaquil", 
   country: "Ecuador",
   address: "Avenida Joaquin Orrantia Gonzalez Edificio Agora, Piso 2, Oficina 10, Guayaquil 090505, Ecuador",
-  phone: "+593 994 242",
+  phone: "+593 99 424 2175",
   email: "admision@insalud.ec",
   socials: {
     instagram: "https://www.instagram.com/insalud.sedequito?igsh=YThkMDh3eXQ5d3Q4",

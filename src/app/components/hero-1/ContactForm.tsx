@@ -120,7 +120,7 @@ export const ContactForm = ({ gestorData, tratamiento, sede }: ContactFormProps)
                     <Input
                       className="bg-in-cyan md:bg-white font-normal md:font-medium text-in-blue placeholder:text-in-blue placeholder:font-normal placeholder:text-sm md:placeholder:font-medium py-5 focus:border-in-orange"
                       {...field}
-                      placeholder="Celular*"
+                      placeholder="Celular"
                       maxLength={10}
                         onChange={(e) => {
                           const value = e.target.value.replace(/\D/g, '');
